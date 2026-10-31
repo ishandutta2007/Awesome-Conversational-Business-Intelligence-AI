@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global conversational AI and business intelligence market represents an estimated addressable sector size of ~$30B to $41B in 2026, projected to surpass $62B+ by 2031 at a ~10-14% CAGR as enterprises shift from static dashboards to natural-language analytics agents. The sector exhibits a moderately concentrated, barbell-fragmented structure where hyperscaler BI platforms (Microsoft, Salesforce/Tableau) and major cloud data warehouses (Snowflake, SAP) capture incumbent market share, while focused pure-play vendors (ThoughtSpot, Sisense, Veezoo, Luzmo) compete on specialized agentic orchestration, semantic layer precision, and embedded integrations.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snowflake Cortex Analyst](https://www.snowflake.com/)**
-
-  **Natural language to governed SQL** over Snowflake tables using semantic models. **Pricing**: Bundled at no extra cost for Enterprise Edition customers; moved to **decoupled AI-credit billing in April 2026** . **Free tier**: **No permanent free tier**—only a **30-day credit trial**; **Cortex AI features are deliberately disabled on self-service trial accounts** . **Best for**: Snowflake Enterprise customers wanting governed NL2SQL within the warehouse perimeter—**trade-off**: trial accounts cannot evaluate Cortex features; requires pay-as-you-go conversion or workshop-provided accounts .
-
-
-
-- **[ThoughtSpot Sage](https://www.thoughtspot.com/)**
-
-  **AI-powered analytics** with natural language search and automated insights. **Pricing**: Public price list exists (2 plans); third-party listings suggest **Enterprise from ~$95/user/month** . **Free tier**: **No free tier**; **14-day free trial** . **Best for**: teams wanting search-driven analytics with AI-generated insights—**trade-off**: enterprise pricing; no free tier for evaluation beyond trial.
-
-
-
-- **[Tableau Pulse / Tableau Agent](https://www.tableau.com/)**
-
-  **Conversational metrics exploration** within Tableau Pulse. **Pricing**: **Tableau Agent in Pulse requires Tableau+ license edition** after trial; Tableau+ pricing is quote-only. **Free tier**: **60-day trial** of Tableau Agent in Pulse for existing Tableau Cloud sites—**unlimited questions during trial**; trial cannot be paused; users lose access after 60 days unless Tableau+ is purchased . **Best for**: existing Tableau Cloud customers wanting conversational metric exploration—**trade-off**: requires Tableau+ for production; trial is time-boxed and cannot be extended.
-
-
-
-- **[Power BI Copilot](https://powerbi.microsoft.com/)**
-
-  **Copilot for Power BI** requiring **paid Fabric capacity (F2 or higher) or Premium P1+**—a Pro/PPU license alone is **not sufficient**; **trial SKUs are not supported** . **Pricing**: **F2 capacity from $262.80/month pay-as-you-go** (~$156/month reserved 1-year) plus **Pro seats at $14/user/month below F64**; **F64 at $8,409.60/month PAYG** removes viewer Pro license requirement; token-metered consumption on top (100 CU-seconds per 1,000 input tokens; 400 per 1,000 output tokens) . **Free tier**: **No free tier**; **trial capacities are explicitly not supported** . **Best for**: Microsoft Fabric customers with existing capacity commitments—**trade-off**: F2 is exhausted after ~20 questions/day per community measurement; realistic sustained use requires F64 (~$100K/year) .
-
-
-
-- **[Sisense Fusion AI](https://www.sisense.com/)**
-
-  **Embedded analytics** with AI-powered insights. **Pricing**: **Enterprise-only pricing, no published tiers**—all pricing negotiated through sales . **Free tier**: **No free tier**; **14-day free trial** available . **Best for**: enterprises wanting embedded analytics with AI insights—**trade-off**: inaccessible for small teams; no self-service pricing.
-
-
-
-- **[Qlik Answers](https://www.qlik.com/)**
-
-  **Conversational analytics** within Qlik Cloud. **Pricing**: Quote-only; Qlik Cloud Analytics pricing available on request. **Free tier**: **30-day free trial** . **Best for**: Qlik customers wanting natural language Q&A on their data—**trade-off**: tied to Qlik ecosystem.
-
-
-
-- **[Veezoo](https://www.veezoo.com/)**
-
-  **Agentic analytics** with knowledge graph and natural language query. **Pricing**: **Pro and Enterprise plans**; **Predictable** (fixed annual for licensed users) or **Flexible** (active-user pricing); **LLM token costs included** in hosted version—no separate token bill . **Free tier**: **Try free** available for Pro; no permanent free tier specified . **Best for**: teams wanting AI analytics without surprise LLM token costs—**trade-off**: knowledge graph setup required for governed answers.
-
-
-
-- **[Domo AI](https://www.domo.com/)**
-
-  **AI chat and agentic analytics** within Domo's platform. **Pricing**: **No list price**—credit-based consumption model; **AI chat requests consume credits since January 1, 2025**; **Domo AI Pro Documents and Agent Knowledge consume credits since August 1, 2026** . **Free tier**: **30-day trial** with **no credit cap**, but **excludes AutoML, Jupyter Workspaces, and some governance functions** . **Best for**: Domo customers wanting AI analytics within their existing platform—**trade-off**: credit consumption model makes costs unpredictable; trial excludes key AI-adjacent features.
-
-
-
-- **[AskData](https://askdata.com/)**
-
-  **Conversational analytics** platform. **Pricing**: **Free tier available**; paid from **$4/month** across 2 tiers; self-serve checkout . **Free tier**: **Yes, free-forever plan** with no credit card required . **Best for**: small teams wanting low-cost conversational BI—**trade-off**: limited enterprise features at entry pricing.
-
-
-
-- **[Luzmo AI](https://www.luzmo.com/)**
-
-  **Embedded analytics with AI** for SaaS products. **Pricing**: **Free to start**; upgrade when scaling; no credit card required . **Free tier**: **Yes, free workspace** to start . **Best for**: SaaS companies embedding analytics with AI into their product—**trade-off**: embedded/white-label focus, not internal BI.
-
-
+| Company / Product | Company Size (Valuation / Revenue) | Starting Pricing Tier | Free Tier / Trial Limits | Key Focus & Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Power BI Copilot](https://powerbi.microsoft.com/)** (Microsoft) | **Valuation: ~$3.1T+**<br>*(FY25 Rev: $245B+)* | **$262.80/month** (Fabric F2 PAYG capacity) + **$14/user/month** (Power BI Pro seat below F64) | **60-day free trial** of Fabric capacity (F64 equivalent, 1 TB OneLake storage); **Note**: Copilot features require dedicated paid F2+ capacity and are excluded on trial SKUs. | Governed conversational BI deeply embedded in Microsoft Fabric / Office 365. Sustained organizational usage typically requires F64 (~$8,410/mo PAYG). |
+| **[Tableau Pulse / Tableau Agent](https://www.tableau.com/)** (Salesforce) | **Valuation: ~$280B+**<br>*(FY25 Rev: $38B+)* | **$15/user/month** (Viewer, Standard) / **$115/user/month** (Creator, Enterprise); Tableau+ bundle is custom-quoted | **60-day free trial** of Tableau Agent in Pulse on existing Tableau Cloud sites (unlimited questions during the 60-day window; cannot be extended or paused). | Conversational metric exploration and autonomous digest generation natively embedded in Tableau Cloud / Salesforce Data Cloud. |
+| **[Snowflake Cortex Analyst](https://www.snowflake.com/)** | **Valuation: ~$110B+**<br>*(FY26 Rev: $4.68B)* | **$3.00/credit** (Enterprise Edition PAYG compute) + AI credit/message metering (~6.7 credits/100 requests) | **30-day free trial** with **$400 in platform credits**; **Note**: Cortex AI / LLM features are disabled on self-service trial accounts and require pay-as-you-go conversion. | Governed natural language to SQL executing over Snowflake warehouse tables via audited YAML semantic models. |
+| **[Qlik Answers](https://www.qlik.com/)** (Qlik / Thoma Bravo) | **Valuation: ~$10B**<br>*(Est. ARR: $1B+)* | **$300/month** (Starter tier, billed annually at $3,600/yr for 10 users & 10 GB) or **$825/month** (Standard tier, 25 GB) | **30-day free trial** (access to full Qlik Cloud Analytics environment with standard connector limits). | Conversational analytics, unstructured content Q&A, and associative engine analysis within Qlik Cloud. |
+| **[ThoughtSpot Sage](https://www.thoughtspot.com/)** | **Valuation: ~$4.2B**<br>*(Est. ARR: ~$170M-$200M+)* | **$95/user/month** (Enterprise base seat estimate) or usage-based tiering starting ~$2,500/yr | **14-day free trial** (full access to search data, AI agents like Spotter, and warehouse connections; max 10 CSV uploads per user). | Search-driven analytics and natural language insights over cloud data warehouses using semantic search indexing. |
+| **[Sisense Fusion AI](https://www.sisense.com/)** | **Valuation: ~$1.1B**<br>*(Est. ARR: ~$140M-$150M)* | **~$2,083/month** (Billed annually starting ~$25,000-$40,000/year base deployment package) | **14-day free trial** (cloud sandbox environment with preloaded demo datasets and Compose SDK embedding access; no credit card required). | API-first embedded conversational analytics with AI insights, ElastiCube data modeling, and custom front-end SDKs. |
+| **[Domo AI](https://www.domo.com/)** | **Valuation: ~$150M**<br>*(FY26 Rev: $318M)* | **~$2,500/month** (Billed annually starting ~$30,000/year consumption credit pool; credit charges apply to AI chat requests) | **30-day free trial** (unlimited trial credits for core BI; strictly excludes AutoML, Jupyter Workspaces, and advanced governance). | Full-stack cloud BI with conversational chat interfaces, Magic ETL pipelines, and embedded agentic workflows. |
+| **[Luzmo AI](https://www.luzmo.com/)** | **Valuation: ~$75M**<br>*(Est. ARR: ~$5M-$10M)* | **$1,995/month** ("Embedded Everywhere" plan, billed annually; unlimited end-users, 100M Warp rows, 500 AI conversations/mo) | **10-day free trial** (full access to embedding SDKs, white-labeling, and Luzmo IQ conversational analytics; no permanent free tier). | Purpose-built embedded conversational analytics and self-service dashboards designed specifically for B2B SaaS software vendors. |
+| **[AskData](https://askdata.com/)** (SAP) | **Valuation: Undisclosed**<br>*(Parent SAP Cap: ~$260B+)* | **$4/month** (Historical standalone entry plan); integrated via SAP BTP / SAP Analytics Cloud subscription tiers | **Free-forever plan** for public datasets / SAP BTP Free Tier (evaluation access with strict capacity & service limits; 90-day integration trials). | Acquired by SAP in July 2022; conversational SQL and search-driven analytics interface embedded across SAP BTP. |
+| **[Veezoo](https://www.veezoo.com/)** | **Valuation: Undisclosed**<br>*(Total Funding: ~$7.3M, Est. Rev: ~$1.2M)* | **$49/user/month** (Professional tier starting base) or Predictable/Flexible annual team packages (hosted LLM token costs included) | **14-day free trial** (test knowledge graph generation, root-cause analysis, and natural language queries; no permanent free tier). | AI-native conversational BI powered by dynamic knowledge graphs with all LLM token inference costs bundled into the base subscription. |
 
 ## Open-Source GitHub Projects
 
