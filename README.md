@@ -70,7 +70,7 @@ Enterprise-ready hosted solutions providing governed natural language exploratio
 
 Self-hosted, transparent, and developer-friendly frameworks for building conversational BI agents, natural language querying (NLQ), and text-to-SQL pipelines. **Sorted in descending order by GitHub_Stars:**
 
-| Open-Source Project | GitHub Stars_Badge | Core Architecture & Primary Tech Stack | Best For / Key Use Cases |
+| Open-Source Project | GitHub_Stars_Badge | Core Architecture & Primary Tech Stack | Best For / Key Use Cases |
 | :--- | :--- | :--- | :--- |
 | **[PandasAI](https://github.com/sinaptik-ai/pandas-ai)** 🐼 | [![GitHub_Stars](https://img.shields.io/github/stars/sinaptik-ai/pandas-ai?style=social&color=white)](https://github.com/sinaptik-ai/pandas-ai/stargazers) | Python, RAG, Multi-LLM, Pandas, Polars, SQL connectors | Conversational data analysis and automated chart visualization directly over DataFrames, SQL databases, and Parquet/CSV data lakes. |
 | **[Vanna.AI](https://github.com/vanna-ai/vanna)** 🐍 | [![GitHub_Stars](https://img.shields.io/github/stars/vanna-ai/vanna?style=social&color=white)](https://github.com/vanna-ai/vanna/stargazers) | Python, Vector Database RAG (Chroma/Pinecone/Qdrant), Multi-LLM | Accurate, self-learning Text-to-SQL generation trained on your specific schema, documentation, and historic SQL queries. |
