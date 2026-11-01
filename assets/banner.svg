@@ -108,7 +108,7 @@
       <circle cx="-160" cy="0" r="5" fill="#38bdf8" filter="url(#softGlow)">
         <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
       </circle>
-      <text x="-142" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="1.2">CURATED ECOSYSTEM &bull; AUTONOMOUS ANALYTICS</text>
+      <text x="-142" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="1.2">CURATED ECOSYSTEM • AUTONOMOUS ANALYTICS</text>
     </g>
 
     <!-- Main Title -->
@@ -123,7 +123,7 @@
 
     <!-- Subtitle / Value Proposition -->
     <text x="600" y="260" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
-      Natural Language Query &bull; Semantic Models &bull; Text-to-SQL Agents &bull; Self-Hosted GenBI
+      Natural Language Query • Semantic Models • Text-to-SQL Agents • Self-Hosted GenBI
     </text>
 
     <!-- Bottom Feature Pills Group -->
